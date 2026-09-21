@@ -100,7 +100,7 @@ app.use(
     authenticateToken,
     requireRole("admin"),
     createProxyMiddleware({
-        target: "http://localhost:3003",
+       target: "54.242.76.121:3003",
         changeOrigin: true
     })
 );
@@ -114,7 +114,7 @@ app.use(
     authenticateToken,
     requireRole("user"),
     createProxyMiddleware({
-        target: "http://localhost:3004",
+        target: "http://100.31.156.135:3004",
         changeOrigin: true,
 
         on: {
